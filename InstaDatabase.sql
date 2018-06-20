@@ -21,7 +21,7 @@ CREATE TABLE entries (
    dateAndTime DATETIME NOT NULL,
    instaLink VARCHAR(2000) NOT NULL,
    instaPostId INT UNSIGNED NOT NULL,
-   points INT UNSIGNED NOT NULL
+   points INT UNSIGNED NULL
 );
 
 Describe profileInformation;
