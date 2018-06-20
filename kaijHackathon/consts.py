@@ -3,8 +3,8 @@ import os
 TAGS = ['healthylivingtlvchallenge', ]
 
 
-ACCESS_TOKEN = os.environ('ACCESS_TOKEN')
+ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 assert ACCESS_TOKEN
-DB_ADDRESS = 'localhost'
+DB_ADDRESS = 'localhost:8889'
 DB_USER = None
-DB = None
+DB = 'INSTA'

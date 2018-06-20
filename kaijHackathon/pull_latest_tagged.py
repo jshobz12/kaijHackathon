@@ -2,11 +2,12 @@ from datetime import datetime
 import requests
 import pymysql
 
-from .consts import *
+from consts import *
 
 
 def insert_posts(results):
-    with pymysql.connect(DB_ADDRESS, DB_USER, database=DB) as con:
+    #with pymysql.connect(DB_ADDRESS, DB_USER, database=DB) as con:
+    with pymysql.connect(DB_ADDRESS, database=DB) as con:
         for post in results:
             userid_query = f'SELECT id FROM profileInformation WHERE handle = {post["user"]["username"]};'
             con.execute(userid_query)
@@ -27,7 +28,7 @@ def get_page_tagged(tags):
     seen_posts = set()
     for tagname in tags:
         r = requests.get('https://api.instagram.com/v1/tags/'
-                         f'{tagname}/media/recent?access_token={token}')
+                         f'{tagname}/media/recent?access_token={ACCESS_TOKEN}')
         if not r.ok:
             _log_request_error(r)
             continue
@@ -57,3 +58,9 @@ def _log_request_error(request):
         jsonerror = ''
     print("error fetching tags: "
           f"{request.status_code} {request.reason}: {jsonerror}")
+
+
+if __name__ == '__main__':
+    get_page_tagged(TAGS)
+
+
