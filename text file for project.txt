@@ -1,0 +1,45 @@
+Looking good and feeling good go hand in hand. if you have a healthy lifestyle you're going to feel good.
+
+There's an epidemic occurring in Israel.
+Obesity levels in Israel are rising, especially amongst children.
+
+Obesity causes significant damage to health; it affects quality of life and the ability to function, and
+causes chronic mental and physical morbidity. Significant weight gain is even liable to lead to premature
+death.
+
+The percentage
+of adults and children suffering from overweight and obesity in Israel has grown. The KAP survey of
+2008 found that 13.7% of people aged 18 and above suffer from obesity, and 34% from overweight.
+Longitudinal surveys show evidence of increasing weight gain among adults and teens.
+
+(past two quotes from health.gov.il -- obesity-prof_en.pdf)
+
+
+In recent years,most OECD countries have relied on the use
+of social media and new technologies in order to tackle the
+problem of obesity
+
+according to the initiatives taken by israeli govt (obesity-prof_en.pdf) === The media should be encouraged to use positive role models to further the consumption of healthful
+food.
+
+We seek to reward social media users who post about their healthy lifestyles, actively promoting role models and healthy lifestyles amongst Israeli's on social media.
+
+Instagram and health - 
+(nbcnews.com/better/pop-culture/how-to-use-instagram-help-you-lose-weight)
+
+
+it turns out liking photos on Instagram might not be such a mindless habit after all — especially if what you’re looking at is photos of healthy meals or people who are in shape. “Seeing positive images online can be inspiring and motivating,” says Jonathan Alpert, a New York- and Washington, D.C.-based psychotherapist and author of Be Fearless: Change Your Life in 28 Days.
+
+What’s more, these kinds of Instagram posts can remind you to embrace and actually adopt healthy behaviors, says Melanie Greenberg, Ph.D., a licensed clinical psychologist in Mill Valley, Calif., and author of The Stress-Proof Brain. Considering trying a trendy diet (like Whole 30) or fitness plan (like Kayla Itsines’ Bikini Body Guide)? Alpert says that social media can also provide you with a supportive community to help you reach your goals.
+
+Thus, we created a platform to bring together social media users who are actively living and promoting healthy lifestyles.
+By engaging with your peers, we aim to promote healthy lifestyles, and reward you for doing so!
+
+Innovative, cutting-edge Machine Learning image processing technology to analyze users' photos to determine if they contain 'healthy' content.
+Users are given points based on the healthy content in their photos.
+
+Check out our leaderboard to show where you stand in your community
+
+See your profile on our platform - the photos you've posted.
+
+Join the community of health advocates actively living and promoting a healthy lifestyle on social media and get rewarded for it!
