@@ -2,26 +2,32 @@ from datetime import datetime
 import requests
 import pymysql
 
-from .consts import *
+from consts import *
 
 
 def insert_posts(results):
-    with pymysql.connect(DB_ADDRESS, DB_USER, database=DB) as con:
+    con = pymysql.connect(DB_ADDRESS, DB_USER, database=DB)
+    with con.cursor() as cur:
         for post in results:
-            userid_query = f'SELECT id FROM profileInformation WHERE handle = {post["user"]["username"]};'
-            con.execute(userid_query)
-            userid = next(con.fetchone(), None)
+            userid_query = 'SELECT id FROM profileInformation WHERE handle = ' \
+                           f'"{post["user"]["username"]}";'
+            cur.execute(userid_query)
+            userid = cur.fetchone()
             if userid is None:  # skip people not in our system
                 continue
-            datetime = datetime.fromtimestamp(int(post['created_time'])) \
+            userid = userid[0]
+            dt = datetime.fromtimestamp(int(post['created_time'])) \
                 .strftime('%Y-%m-%d %H:%M:%S')
-            insert_query = f"""INSERT INTO entries (userId,dateAndTime,insta,instaPostId,points)
-                VALUES({userid}, {datetime}, {post['link']}, {post[id]}, NULL"""
-            con.execute(insert_query)
-        con.commit()
+            insert_query = f"""INSERT INTO entries 
+                (userId,dateAndTime,postURL,imgURL,instaPostId,points)
+                VALUES({userid}, "{dt}", "{post['link']}", 
+                "{post["images"]["standard_resolution"]["url"]}", 
+                "{post["id"]}", NULL)"""
+            cur.execute(insert_query)
+    con.commit()
 
 
-def get_page_tagged(tags):
+def get_page_tagged(tags, token):
     """Searches for new posts with any from the list of tags"""
     results = []
     seen_posts = set()
@@ -34,7 +40,7 @@ def get_page_tagged(tags):
         posts = r.json()['data']
         for post in posts:
             postid = post['id']
-            if is_id_in_db(postid):  # everything past here is old news
+            if is_id_in_db(postid):  # everything past this point is already in db
                 break
             if postid in seen_posts:  # was seen with another tag
                 continue
@@ -44,7 +50,7 @@ def get_page_tagged(tags):
 
 
 def is_id_in_db(postid):
-    query = f'SELECT id FROM entries WHERE postId = {postid};'
+    query = f'SELECT id FROM entries WHERE instaPostId = "{postid}";'
     with pymysql.connect(DB_ADDRESS, DB_USER, database=DB) as con:
         con.execute(query)
         return len(con.fetchall())
@@ -57,3 +63,7 @@ def _log_request_error(request):
         jsonerror = ''
     print("error fetching tags: "
           f"{request.status_code} {request.reason}: {jsonerror}")
+
+
+if __name__ == '__main__':
+    get_page_tagged(TAGS, ACCESS_TOKEN)
