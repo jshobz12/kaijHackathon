@@ -28,13 +28,8 @@ Describe profileInformation;
 Describe entries;
 
 
-<<<<<<< HEAD
-INSERT INTO profileInformation (username,email,password,handle,totalPoints)
-VALUES("kweiss20","kiraweiss@me.com","dog1234","@kiraweiss",23);
-=======
 INSERT INTO profileInformation (username,email,password,handle)
 VALUES("kweiss20","kiraweiss@me.com","dog1234","@kiraweiss");
->>>>>>> 09961f7542103b8ac1d86dd686c786741d98b1aa
 
 INSERT INTO entries (userId,dateAndTime,postURL,imgURL,instaPostId,points)
 VALUES(1,'2018-06-19 12:34:22',"linkToInsta.com",'linktoimg.com',1111,2);
@@ -44,13 +39,8 @@ VALUES(1,'2018-06-20 15:07:20',"linkToInsta.com",'linktoimg.com',1112,2);
 
 
 
-<<<<<<< HEAD
-INSERT INTO profileInformation (username,email,password,handle,totalPoints)
-VALUES("JoeSmith","JoeSmith@gmail.com","rockon665","@joe_the_rock",54);
-=======
 INSERT INTO profileInformation (username,email,password,handle)
 VALUES("JoeSmith","JoeSmith@gmail.com","rockon665","@joe_the_rock");
->>>>>>> 09961f7542103b8ac1d86dd686c786741d98b1aa
 
 INSERT INTO entries (userId,dateAndTime,postURL,imgURL,instaPostId,points)
 VALUES(2,'2018-06-16 13:55:01',"linkToInsta.com",'linktoimg.com',1113,2);
@@ -63,13 +53,8 @@ VALUES(2,'2018-06-19 19:14:48',"linkToInsta.com",'linktoimg.com',1115,2);
 
 
 
-<<<<<<< HEAD
-INSERT INTO profileInformation (username,email,password,handle,totalPoints)
-VALUES("fitgirl22","sarah_fitness@hotmail.com","smoothiesonly0","@fitgirl220",56);
-=======
 INSERT INTO profileInformation (username,email,password,handle)
 VALUES("fitgirl22","sarah_fitness@hotmail.com","smoothiesonly0","@fitgirl220");
->>>>>>> 09961f7542103b8ac1d86dd686c786741d98b1aa
 
 INSERT INTO entries (userId,dateAndTime,postURL,imgURL,instaPostId,points)
 VALUES(3,'2018-06-20 8:31:03',"linkToInsta.com",'linktoimg.com',1116,2);
