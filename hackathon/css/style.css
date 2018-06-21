@@ -1437,3 +1437,17 @@ px      68    160    252    344    436    */
 .img-rewards{
   height:360px;
 }
+
+.vitalifeedimg{
+  height:170px;
+  margin-top:-80px;
+  margin-left:20px;
+  position:absolute;
+}
+
+.vitalifeedimgAbout{
+  height:170px;
+  margin-top:-90px;
+  margin-left:340px;
+  position:absolute;
+}
