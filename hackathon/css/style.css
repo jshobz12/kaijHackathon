@@ -1484,6 +1484,10 @@ px      68    160    252    344    436    */
 }
 
 #hereChanges {
+  width:400px;
+}
+
+#myContainer {
   display: inline-block;
 }
 
@@ -1493,5 +1497,6 @@ px      68    160    252    344    436    */
   float: right;
   z-index: 30;
   margin-right: 10px;
+  padding-top: 5px;
 }
 
