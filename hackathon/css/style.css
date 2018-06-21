@@ -445,15 +445,15 @@ a:hover {
 }
 
 .about-feature .about-feature-1 {
-  background: #FF4500;
+  background: rgb(250, 92, 34);
 }
 
 .about-feature .about-feature-2 {
-  background: #FF4500;
+  background: rgb(255, 110, 57);
 }
 
 .about-feature .about-feature-3 {
-  background: #FF4500;
+  background: rgb(248, 116, 68);
 }
 
 .works {
@@ -825,6 +825,7 @@ article {
 
 #contact-section .contact-form {
   margin-top: 42px;
+  z-index : 20;
 }
 
 #contact-section .contact-form .btn-send {
@@ -1445,14 +1446,34 @@ px      68    160    252    344    436    */
 }
 
 .vitalifeedimgAbout{
-  height:170px;
-  margin-top:-90px;
-  margin-left:340px;
+  height:140px;
+  margin-top:-80px;
+  margin-left:450px;
   position:absolute;
 }
 
-.displayedPhotos {
-  width: 300px;
-  height: 300px;
-  display: inline-block;
+.vitalifeedimgAboutInsta{
+  height:40px;
+  margin-top:-15px;
+  margin-left:480px;
+  position:absolute;
+}
+
+.vitalifeedimgAboutInsta2{
+  height:40px;
+  margin-top:-45px;
+  margin-left:535px;
+  position:absolute;
+}
+
+.instaphotosalad{
+  height:300px;
+  width:100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.postpoints{
+  text-align: center;
 }
