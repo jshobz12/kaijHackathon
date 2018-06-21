@@ -1456,3 +1456,15 @@ px      68    160    252    344    436    */
   height: 300px;
   display: inline-block;
 }
+
+#hereChanges {
+  display: inline-block;
+}
+
+#myProfilePictures {
+  border: 1px solid black;
+  background-color: green;
+  height: 600px;
+  width: 400px;
+  float: right;
+}
