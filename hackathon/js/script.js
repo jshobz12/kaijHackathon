@@ -24,7 +24,7 @@ $(document).ready(function () {
             playerRanking.text(i+1);
             playerName.text(response.scores[i].username);
             playerPoints.text(response.scores[i].totalpts);
-            playerProfile.text(response.scores[i].handle);
+            playerProfile.text("@"+response.scores[i].handle);
             newPlayer.append(playerRanking);
             newPlayer.append(playerName);
             newPlayer.append(playerPoints);
