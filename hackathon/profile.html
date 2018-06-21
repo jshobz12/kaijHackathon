@@ -65,10 +65,9 @@
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <div class="main-menu">
                         <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="index.html" >Home</a>
-                            </li>
+                            <li><a href="index.html" >Home</a></li>
                             <li><a href="leaderboard.html">Leaderboard</a></li>
+                            <li><a href="rewards.html">Rewards</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="profile.html">My Profile</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -114,25 +113,33 @@
     My Profile Information
 ================================================== -->
 <section id="contact-section">
+        <div id="myProfilePictures"></div>
+
     <div class="container">
-        <div class="row">
+        <div class="row" id="hereChanges">
             <div class="col-md-6">
                 <div class="block">
                     <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">My Profile</h2>
                     
                     <div class="contact-form">
                         <form id="contact-form" method="#" action="#" role="form">
-                
+                            
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
-                                <input type="text" placeholder="Username" class="form-control" name="username" id="username">
+                                <p><b>Points : 4</b></p>
+                                
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                <p>kweiss20</p>
+                                <input type="text" placeholder="Edit Username" class="form-control" name="username" id="username">
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" >
+                                <p>kiraweiss@me.com</p>
+                                <input type="email" placeholder="Edit Email" class="form-control" name="email" id="email" >
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
-                                <input type="text" placeholder="Instagram Handle" class="form-control" name="handle" id="handle">
+                                <p>@kiraweiss</p>
+                                <input type="text" placeholder="Edit Instagram Handle" class="form-control" name="handle" id="handle">
                             </div>
                             
                             <div id="success" class="success">
@@ -231,6 +238,8 @@
 	<!-- Fancybox -->
 	<script src="plugins/facncybox/jquery.fancybox.js"></script>
 	<!-- template main js -->
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <!-- user photos js -->
+	<script src="js/profilePhotos.js"></script>
  	</body>
 </html>

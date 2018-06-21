@@ -32,10 +32,10 @@ INSERT INTO profileInformation (username,email,password,handle)
 VALUES("kweiss20","kiraweiss@me.com","dog1234","@kiraweiss");
 
 INSERT INTO entries (userId,dateAndTime,postURL,imgURL,instaPostId,points)
-VALUES(1,'2018-06-19 12:34:22',"linkToInsta.com",'linktoimg.com',1111,2);
+VALUES(1,'2018-06-19 12:34:22',"linkToInsta.com",'images/health_imgs/instahealthy.jpg',1111,2);
 
 INSERT INTO entries (userId,dateAndTime,postURL,imgURL,instaPostId,points)
-VALUES(1,'2018-06-20 15:07:20',"linkToInsta.com",'linktoimg.com',1112,2);
+VALUES(1,'2018-06-20 15:07:20',"linkToInsta.com",'images/health_imgs/smoothie.jpg',1112,2);
 
 
 
@@ -43,13 +43,13 @@ INSERT INTO profileInformation (username,email,password,handle)
 VALUES("JoeSmith","JoeSmith@gmail.com","rockon665","@joe_the_rock");
 
 INSERT INTO entries (userId,dateAndTime,postURL,imgURL,instaPostId,points)
-VALUES(2,'2018-06-16 13:55:01',"linkToInsta.com",'linktoimg.com',1113,2);
+VALUES(2,'2018-06-16 13:55:01',"linkToInsta.com",'images/health_imgs/running.jpg',1113,2);
 
 INSERT INTO entries (userId,dateAndTime,postURL,imgURL,instaPostId,points)
-VALUES(2,'2018-06-17 21:34:37',"linkToInsta.com",'linktoimg.com',1114,2);
+VALUES(2,'2018-06-17 21:34:37',"linkToInsta.com",'images/health_imgs/biking.jpg',1114,2);
 
 INSERT INTO entries (userId,dateAndTime,postURL,imgURL,instaPostId,points)
-VALUES(2,'2018-06-19 19:14:48',"linkToInsta.com",'linktoimg.com',1115,2);
+VALUES(2,'2018-06-19 19:14:48',"linkToInsta.com",'images/health_imgs/running2.jpg',1115,2);
 
 
 
@@ -57,7 +57,7 @@ INSERT INTO profileInformation (username,email,password,handle)
 VALUES("fitgirl22","sarah_fitness@hotmail.com","smoothiesonly0","@fitgirl220");
 
 INSERT INTO entries (userId,dateAndTime,postURL,imgURL,instaPostId,points)
-VALUES(3,'2018-06-20 8:31:03',"linkToInsta.com",'linktoimg.com',1116,2);
+VALUES(3,'2018-06-20 8:31:03',"linkToInsta.com",'images/health_imgs/salad.jpg',1116,2);
 
 INSERT INTO profileInformation (username,email,password,handle)
 VALUES("aritheuser","ari@ari.com","password","aritherobot");

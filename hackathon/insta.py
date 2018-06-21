@@ -34,10 +34,73 @@ def category() :
         }
     return json.dumps(result)
 
+@get("/all_photos")
+def category() :
+    try :
+        with connection.cursor() as cursor:
+            sql = "select imgURL from entries limit 20;"
+            cursor.execute(sql)
+            get_photos = cursor.fetchall()
+            result = {
+                "STATUS" : "SUCCESS",
+                "MSG" : "success",
+                "photos" : get_photos,
+                "CODE" : 200
+            }
+    except :
+        result={
+            "STATUS" : "ERROR",
+            "MSG" : "internal error",
+            "CODE" : 500
+        }
+    return json.dumps(result)
 
-@get("/")
+@get("/profile_photos")
+def category() :
+    try :
+        with connection.cursor() as cursor:
+            sql = "select imgURL from entries e where e.userid=1 limit 20;"
+            cursor.execute(sql)
+            get_photos = cursor.fetchall()
+            result = {
+                "STATUS" : "SUCCESS",
+                "MSG" : "success",
+                "photos" : get_photos,
+                "CODE" : 200
+            }
+    except :
+        result={
+            "STATUS" : "ERROR",
+            "MSG" : "internal error",
+            "CODE" : 500
+        }
+    return json.dumps(result)
+
+
+@get("/about.html")
+def about():
+    return template("about.html")
+@get("/contact.html")
+def contact():
+    return template("contact.html")
+@get("/index.html")
 def index():
+    return template("index.html")
+@get("/login.html")
+def login():
+    return template("login.html")
+@get("/profile.html")
+def profile():
+    return template("profile.html")
+@get("/leaderboard.html")
+def leaderboard():
     return template("leaderboard.html")
+@get("/rewards.html")
+def rewards():
+    return template("rewards.html")
+@get("/")
+def root():
+    return leaderboard()
 
 
 @get('/js/<filename:re:.*\.js>')
