@@ -32,10 +32,10 @@ INSERT INTO profileInformation (username,email,password,handle)
 VALUES("kweiss20","kiraweiss@me.com","dog1234","@kiraweiss");
 
 INSERT INTO entries (userId,dateAndTime,postURL,imgURL,instaPostId,points)
-VALUES(1,'2018-06-19 12:34:22',"linkToInsta.com",'linktoimg.com',1111,2);
+VALUES(1,'2018-06-19 12:34:22',"linkToInsta.com",'images/health_imgs/instahealthy.jpg',1111,2);
 
 INSERT INTO entries (userId,dateAndTime,postURL,imgURL,instaPostId,points)
-VALUES(1,'2018-06-20 15:07:20',"linkToInsta.com",'linktoimg.com',1112,2);
+VALUES(1,'2018-06-20 15:07:20',"linkToInsta.com",'images/health_imgs/smoothie.jpg',1112,2);
 
 
 
