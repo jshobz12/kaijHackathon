@@ -450,11 +450,11 @@ a:hover {
 }
 
 .about-feature .about-feature-2 {
-  background: #FF6347;
+  background: #FF4500;
 }
 
 .about-feature .about-feature-3 {
-  background: #FF7F50;
+  background: #FF4500;
 }
 
 .works {
@@ -1433,3 +1433,7 @@ cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
 /*# sourceMappingURL=maps/style.css.map */
+
+.img-rewards{
+  height:360px;
+}
