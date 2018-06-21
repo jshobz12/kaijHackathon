@@ -55,6 +55,27 @@ def category() :
         }
     return json.dumps(result)
 
+@get("/profile_photos")
+def category() :
+    try :
+        with connection.cursor() as cursor:
+            sql = "select imgURL from entries e where e.userid=1 limit 20;"
+            cursor.execute(sql)
+            get_photos = cursor.fetchall()
+            result = {
+                "STATUS" : "SUCCESS",
+                "MSG" : "success",
+                "photos" : get_photos,
+                "CODE" : 200
+            }
+    except :
+        result={
+            "STATUS" : "ERROR",
+            "MSG" : "internal error",
+            "CODE" : 500
+        }
+    return json.dumps(result)
+
 
 @get("/about.html")
 def about():
