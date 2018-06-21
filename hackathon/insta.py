@@ -2,13 +2,9 @@ from bottle import route, run, template, static_file, get, post, delete, request
 from sys import argv
 import json
 import pymysql
+from consts import *
 
-
-connection = pymysql.connect(host='localhost',
-                             user='root',
-                             password='!Newyork17',
-                             db='insta',
-                             charset='utf8',
+connection = pymysql.connect(**DB_PARAMS,
                              cursorclass=pymysql.cursors.DictCursor)
 
 
@@ -65,4 +61,4 @@ def images(filename):
     return static_file(filename, root='images')
 
 
-run(host='localhost', port=7000)
+run(host='0.0.0.0', port=7000)
