@@ -10,4 +10,4 @@ DB_PARAMS = dict(host='localhost',
                      db='instadb',
                      charset='utf8',)
 
-DB_PARAMS = DB_PARAMS.update(dict(user='root', password='!Newyork17'))
+DB_PARAMS.update(dict(user='root', password='!Newyork17'))
