@@ -1,3 +1,4 @@
+
 var attempt = 3; // Variable to count number of attempts.
 	// Below function Executes on click of login button.
 	function validate(){
@@ -16,10 +17,10 @@ var attempt = 3; // Variable to count number of attempts.
 
 			// Disabling fields after 3 attempts.
 			if( attempt == 0){
-			document.getElementById("username").disabled = true;
-			document.getElementById("password").disabled = true;
-			document.getElementById("submit").disabled = true;
-			return false;
+				document.getElementById("username").disabled = true;
+				document.getElementById("password").disabled = true;
+				document.getElementById("submit").disabled = true;
+				return false;
 			}
 		}
-}
+	}

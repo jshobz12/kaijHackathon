@@ -134,10 +134,3 @@ px      68    160    252    */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
-/*		Wide Mobile Layout: 480px.
-		Gutters: 24px.
-		Outer margins: 22px.
-		Inherits styles from: Default Layout, Mobile Layout.
-------------------------------------------------------------
-cols    1     2      3      4      5
-px      68    160    252    344    436    */
