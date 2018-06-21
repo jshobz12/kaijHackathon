@@ -35,8 +35,6 @@
             <link rel="stylesheet" href="css/style.css">
             <!-- template login css file -->
             <link rel="stylesheet" href="css/login.css"/>
-            <!-- js login file -->
-            <script src="js/login.js"></script>
         </head>
         <body>
 
@@ -75,11 +73,10 @@
                             <li><a href="about.html">About</a></li>
                             <li><a href="profile.html">My Profile</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><button id="myBtn">Login</button></li>
+                            <li><button id="myBtn" class="mytn">LOGIN</button></li>
                         </ul>
                     </div>
                 </nav>
-                <!-- /main nav -->
             </div>
         </header>
 
@@ -90,9 +87,7 @@
             ================================================== -->
             <div id="myModal" class="modal">
               <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                </div>
+                    <span class="close" id="closeThis">&times;</span>
                 <div class="imgcontainer" flex>
               </div>
 
@@ -108,7 +103,6 @@
               </div>
                 <div class="modal-footer">
                     <button type="submit" id="loginBtn">Login</button>
-                    <button type="button" class="cancelbtn">Cancel</button>
                 </div>
               </div>
             </div>
@@ -119,6 +113,9 @@
 
             // Get the button that opens the modal
             var btn = document.getElementById("myBtn");
+
+            // Get the button that opens the modal
+            var loginBtn = document.getElementById("loginBtn");
 
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
