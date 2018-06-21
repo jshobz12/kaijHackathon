@@ -4,9 +4,10 @@ import pymysql
 
 from consts import *
 
+assert ACCESS_TOKEN
 
 def insert_posts(results):
-    con = pymysql.connect(DB_ADDRESS, DB_USER, database=DB)
+    con = pymysql.connect(**DB_PARAMS)
     with con.cursor() as cur:
         for post in results:
             userid_query = 'SELECT id FROM profileInformation WHERE handle = ' \
@@ -51,7 +52,7 @@ def get_page_tagged(tags, token):
 
 def is_id_in_db(postid):
     query = f'SELECT id FROM entries WHERE instaPostId = "{postid}";'
-    with pymysql.connect(DB_ADDRESS, DB_USER, database=DB) as con:
+    with pymysql.connect(**DB_PARAMS) as con:
         con.execute(query)
         return len(con.fetchall())
 
